@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Parallax.js</title>
+	<link rel="stylesheet" href="style.css">
+<script src="parallax.js"></script>
+</head>
+<body>
+	<div class="container">
+		<ul id="scene">
+			<li class="layer" data-depth="0.00"><img src="bg.png"></li>
+			<li class="layer" data-depth="0.12"><img src="1.png"></li>
+			<li class="layer" data-depth="0.15"><img src="2.png"></li>
+			<li class="layer" data-depth="0.13"><img src="3.png"></li>
+			<li class="layer" data-depth="0.1"><img src="4.png"></li>
+
+			<div id="audio">
+				<audio controls loop autoplay hidden>
+					<source src="jul.mp3" type="audio/mp3">
+				</audio>
+			</div>
+		</ul>
+	</div>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+</body>
+</html>
